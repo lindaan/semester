@@ -1,0 +1,30 @@
+body {
+    margin: 0px;
+}
+
+h1 {
+  font-weight: lighter;
+  font-size: 70px;
+  letter-spacing: 2px;
+  margin-bottom: 0px;
+  font-family: Courier;
+  text-shadow: 2px 2px #000000;
+  color: lightgreen;
+}
+
+.wrapper {
+    background: url("https://emlidean.se/semester2.jpg") center center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#demo {
+    font-family: Courier;
+    margin-bottom: 700px;
+    font-size: 30px;
+    color: black;
+    font-weight: 500;
+}
