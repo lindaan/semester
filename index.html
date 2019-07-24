@@ -11,9 +11,44 @@
 <body>
     <div class="wrapper">
     <h1>SEMESTER</h1>
+    <br>
+    <p id="fredag">FREDAG 13 SEPT 18.00</p>
+    <p id="demoTwo">51d 6h 34m 10s</p>
+    <p id="turkiet">TURKIET</p>
     <p id="demo">80d 3h 0m 55s</p>
     </div>
     <!-- Display the countdown timer in an element -->
+
+<script>
+    // Set the date we're counting down to
+    var countDownDate2 = new Date("Sep 13, 2019 18:00:00").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+
+      // Get today's date and time
+      var now = new Date().getTime();
+
+      // Find the distance between now and the count down date
+      var distance = countDownDate2 - now;
+
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Display the result in the element with id="demo"
+      document.getElementById("demoTwo").innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+
+      // If the count down is finished, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demoTwo").innerHTML = "YAY";
+      }
+    }, 1000);
+</script>
 
 <script>
 // Set the date we're counting down to
